@@ -37,3 +37,29 @@ chmod +x reconizer.sh
 ```bash
 ./reconizer.sh -d example.com -g
 ```
+### 🔹 Run Host Lookup on a File
+
+```bash
+./reconizer.sh -t targets.txt
+```
+targets.txt example:
+```bash
+www.example.com
+api.example.com
+mail.example.com
+```
+### 🔹 Probe Only (domains.txt Already Exists)
+```bash
+./reconizer.sh -d example.com -p
+```
+
+### 🔹 Full Workflow (Subdomain Enum + Probe)
+
+```bash
+./reconizer.sh -d example.com -s -p
+```
+### 🔹 Automatic Subdomain + Host Scan
+
+```bash
+./reconizer.sh -d example.com -a
+```
