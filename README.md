@@ -22,3 +22,18 @@ It combines subdomain discovery, URL harvesting, host lookup, and live probing i
 git clone https://github.com/cavidaneskerov/Reconizer
 cd Reconizer
 chmod +x reconizer.sh
+
+```
+---
+## 🧪 Usage Examples
+
+### 🔹 Subdomain Enumeration
+
+```bash
+./reconizer.sh -d example.com -s
+```
+### 🔹 Collect Archived URLs with gau
+
+```bash
+./reconizer.sh -d example.com -g
+```
