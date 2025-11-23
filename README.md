@@ -1,4 +1,7 @@
 # Reconizer
+![bash](https://img.shields.io/badge/language-bash-blue)
+![status](https://img.shields.io/badge/status-active-success)
+![license](https://img.shields.io/badge/license-MIT-green)
 
 Reconizer is a fast and automated reconnaissance tool for bug bounty hunters and penetration testers.  
 It combines subdomain discovery, URL harvesting, host lookup, and live probing into a single Bash script.
