@@ -30,17 +30,17 @@ chmod +x reconizer.sh
 ### 🔹 Subdomain Enumeration
 
 ```bash
-./reconizer.sh -d example.com -s
+reconizer -d example.com -s
 ```
 ### 🔹 Collect Archived URLs with gau
 
 ```bash
-./reconizer.sh -d example.com -g
+reconizer -d example.com -g
 ```
 ### 🔹 Run Host Lookup on a File
 
 ```bash
-./reconizer.sh -t targets.txt
+reconizer -t targets.txt
 ```
 targets.txt example:
 ```bash
@@ -50,16 +50,16 @@ mail.example.com
 ```
 ### 🔹 Probe Only (domains.txt Already Exists)
 ```bash
-./reconizer.sh -d example.com -p
+reconizer -d example.com -p
 ```
 
 ### 🔹 Full Workflow (Subdomain Enum + Probe)
 
 ```bash
-./reconizer.sh -d example.com -s -p
+reconizer -d example.com -s -p
 ```
 ### 🔹 Automatic Subdomain + Host Scan
 
 ```bash
-./reconizer.sh -d example.com -a
+reconizer -d example.com -a
 ```
