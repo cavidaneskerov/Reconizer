@@ -39,7 +39,7 @@ EOF
   -d|--domain)
     if [[ -z $2 || $2 == -* ]]; then
         echo -e "Specify the target domain.\n"
-        echo "Example: ./reconizer.sh -d example.com "
+        echo "Example: reconizer -d example.com "
         exit 1
     fi
     domain="$2"
@@ -64,7 +64,7 @@ EOF
   -t|--host)
     if [[ -z $2 || $2 == -* ]]; then
         echo -e "Error: missing or invalid file after -t \n"
-        echo "Example: ./reconizer.sh -t file.txt"
+        echo "Example: reconizer -t file.txt"
         exit 1
     fi
     do_host=true
@@ -128,6 +128,6 @@ if $do_probe;then
         sub_enum $domain
     fi
 echo "[+] Checking which hosts are alive and grabbing status/tech info"
-cat domains.txt | ~/go/bin/httpx -title -sc -server | tee -a urls.txt
+cat domains.txt | ~/go/bin/httpx -silent -title -sc -server | tee -a urls.txt
 fi
                                                                                                                                                                                                                                             
