@@ -64,3 +64,8 @@ reconizer -d example.com -s -p
 ```bash
 reconizer -d example.com -a
 ```
+
+### Disclaimer
+This tool is for educational and authorized security testing only.
+Do not use it on systems you do not own or have permission to test.
+
