@@ -21,7 +21,8 @@ It combines subdomain discovery, URL harvesting, host lookup, and live probing i
 ```bash
 git clone https://github.com/cavidaneskerov/Reconizer
 cd Reconizer
-chmod +x reconizer.sh
+chmod +x install.sh
+./install.sh
 
 ```
 ---
